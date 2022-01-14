@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Armario mezclador de outfits">
+    <meta name="keywords" content="outfits, ropa, mezclador, estilo, moda, fashion, armario">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Nube de ropa</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/faviconNuvola.ico">
+</head>
+<body>
+    <section class="inicioArmario">
+
+            <!-- CAMISAS = 2 TIPOS 3 COLORES -->
+
+        <div class="tipoCamisas1">
+            <img id="addClothing" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-t-shirt-cleaning-icongeek26-linear-colour-icongeek26.png"/>
+            <img class="mangaCortaWhite stylePiezas" id="1"  src="https://img.icons8.com/ios/50/000000/t-shirt--v1.png"/>
+            <img class="mangaCortaGray stylePiezas" id="2" src="https://img.icons8.com/ios/50/000000/t-shirt--v1.png"/>
+            <img class="mangaCortaRed stylePiezas" id="3"  src="https://img.icons8.com/ios/50/000000/t-shirt--v1.png"/>
+        </div>
+        <div class="tipoCamisas2">
+            <img id="addClothing2" src="https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-long-sleeve-clothes-itim2101-flat-itim2101-1.png"/>
+            <img class="mangaLargaWhite stylePiezas"  id="4"src="https://img.icons8.com/external-itim2101-lineal-itim2101/64/000000/external-polo-shirt-clothes-itim2101-lineal-itim2101-1.png"/>
+            <img class="mangaLargaGray stylePiezas"  id="5" src="https://img.icons8.com/external-itim2101-lineal-itim2101/64/000000/external-polo-shirt-clothes-itim2101-lineal-itim2101-1.png"/>
+            <img class="mangaLargaRed stylePiezas"  id="6" src="https://img.icons8.com/external-itim2101-lineal-itim2101/64/000000/external-polo-shirt-clothes-itim2101-lineal-itim2101-1.png"/>
+        </div>
+
+            <!-- PARTE INFERIOR = 2 TIPOS 3 COLORES -->
+
+        <div class="parteInferior1">
+            <img id="addClothing3" src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-jeans-clothes-and-outfit-victoruler-linear-colour-victoruler.png"/>
+            <img class="jeanWhite stylePiezas" id="7" src="https://img.icons8.com/dotty/80/000000/jeans.png"/>
+            <img class="jeanGray stylePiezas" id="8" src="https://img.icons8.com/dotty/80/000000/jeans.png"/>
+            <img class="jeanRed stylePiezas" id="9" src="https://img.icons8.com/dotty/80/000000/jeans.png"/> 
+        </div>
+        <div class="parteInferior2">
+            <img id="addClothing4" src="https://img.icons8.com/color/64/000000/skirt.png"/>
+            <img class="faldaWhite stylePiezas" id="10" src="https://img.icons8.com/wired/64/000000/skirt.png"/>
+            <img class="faldaGray stylePiezas" id="11" src="https://img.icons8.com/wired/64/000000/skirt.png"/>
+            <img class="faldaRed stylePiezas" id="12" src="https://img.icons8.com/wired/64/000000/skirt.png"/> 
+        </div>
+
+            <!-- ABRIGOS = 2 TIPOS 3 COLORES -->
+
+        <div class="tipoChaqueta1">
+            <img id="addClothing5" src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-coat-winter-wanicon-lineal-color-wanicon.png"/>
+            <img class="deVestirWhite stylePiezas" id="13" src="https://img.icons8.com/external-wanicon-solid-wanicon/64/000000/external-overcoat-autumn-clothes-accesories-wanicon-solid-wanicon.png"/>
+            <img class="deVestirGray stylePiezas" id="14" src="https://img.icons8.com/external-wanicon-solid-wanicon/64/000000/external-overcoat-autumn-clothes-accesories-wanicon-solid-wanicon.png"/>
+            <img class="deVestirRed stylePiezas" id="15" src="https://img.icons8.com/external-wanicon-solid-wanicon/64/000000/external-overcoat-autumn-clothes-accesories-wanicon-solid-wanicon.png"/> 
+        </div>
+        <div class="tipoChaqueta2">
+            <img id="addClothing6" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-coat-autumn-clothes-justicon-lineal-color-justicon-3.png"/>
+            <img class="casualWhite stylePiezas" id="16" src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/000000/external-jacket-winter-photo3ideastudio-lineal-photo3ideastudio.png"/>
+            <img class="casualGray stylePiezas" id="17" src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/000000/external-jacket-winter-photo3ideastudio-lineal-photo3ideastudio.png"/>
+            <img class="casualRed stylePiezas" id="18" src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/000000/external-jacket-winter-photo3ideastudio-lineal-photo3ideastudio.png"/>
+        </div>
+
+            <!-- APARTADO PARA LAS PIEZAS QUE SELECCIONA EL CLIENTE Y MEZCLA -->
+
+        <div class="piezasSeleccionadas">
+            <div>
+                <h1>Piezas seleccionadas</h1>
+            </div>
+            <div class="btnHover">
+                <button id="btnMezclar">Mezclar Outfit</button>
+            </div>
+        </div>
+        <div id="piezasSeleccionadas2"></div>
+        <div id="mezclaDePiezas">
+            <h2>Visualiza tu mezcla</h2>
+        </div>
+    </section>
+
+            <!-- JAVASCRIPT/JQUERY -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

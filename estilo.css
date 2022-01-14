@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Genos', sans-serif;
+}
+
+	/* ESTO VA CON EL JQUERY */
+
+.addRemove{
+	display:inline-flex !important;
+}
+
+	/* PÁGINA INICIAL */
+
+.inicioNuvola{
+	width:100%;
+	height:100vh;
+	background-image:
+	url(../img/designMobile.png),
+	linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1));
+	background-blend-mode: overlay;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	display:flex;
+	flex-direction: column;
+	justify-content:flex-end;
+	align-items:center;
+}
+
+.btnInferior{
+	width: 180px;
+	height: 55px;
+	margin: 0px 0px 80px 0px;
+	position:relative;
+	z-index:10;
+}
+.btnIniciar{
+	width: 100%;
+	height: 100%;
+	background:rgba(255, 255, 255, 0.068);
+	font-size: 15px;
+	border:none;
+	color:white;
+	outline:none;
+	border:1px solid #ffffff2e;
+	transition: all 0.4s;
+	clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.37);
+}
+.btnIniciar:hover{
+	backdrop-filter:blur(10px);
+	clip-path:  polygon(88% 0, 100% 50%, 87% 100%, 0% 100%, 11% 50%, 0% 0%);
+	cursor:pointer;
+}
+.circulo2{
+	position:absolute;
+	top:15px;
+	left:30px;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	background:linear-gradient(to left, #4a569d, #dc2424);
+	z-index:-50;
+}
+.circulo2::before{
+	content:"";
+	position:absolute;
+	top:-28px;
+	right:-80px;
+	width:50px;
+	height:50px;
+	background:linear-gradient(to left, #4a569d, #dc2424);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+	/* SEGUNDA PÁGINA INTERNA ARMARIO DE PIEZAS */
+	/* CAMISAS, PARTE INFERIOR Y ABRIGOS = 3 COLORES 3 ESTILOS */
+
+
+.inicioArmario{
+	width:100%;
+	height:auto;
+	background-image:
+	url(../img/designtwoPage.png),
+	linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1));
+	background-blend-mode: overlay;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.inicioArmario img{
+	width:70px;
+	padding:8px;
+	margin:10px;
+	border-radius: 50%;
+	border: 2px solid black;
+	cursor:pointer;
+}
+.tipoCamisas1, .tipoCamisas2, 
+.parteInferior1, .parteInferior2, 
+.tipoChaqueta1, .tipoChaqueta2{
+	display:flex;
+	justify-content:space-around;
+	border-bottom: 1px solid #FFFFFF;
+}
+.mangaCortaWhite, .mangaCortaGray, .mangaCortaRed,
+.mangaLargaWhite, .mangaLargaGray, .mangaLargaRed, 
+.jeanWhite, .jeanGray, .jeanRed, 
+.faldaWhite, .faldaGray, .faldaRed, 
+.deVestirWhite, .deVestirGray, .deVestirRed, 
+.casualWhite, .casualGray, .casualRed{
+	display:none;
+}
+.mangaCortaWhite, .mangaLargaWhite, .tirantesWhite,
+.jeanWhite, .faldaWhite, .legginWhite,
+.deVestirWhite, .casualWhite, .lluviaWhite{
+	background-color:#FFFFFF;
+}
+.mangaCortaGray, .mangaLargaGray, .tirantesGray,
+.jeanGray, .faldaGray, .legginGray,
+.deVestirGray, .casualGray, .lluviaGray{
+	background-color: #B8B8B8;
+}
+.mangaCortaRed, .mangaLargaRed, .tirantesRed,
+.jeanRed, .faldaRed, .legginRed,
+.deVestirRed, .casualRed, .lluviaRed{
+	background-color: #8A0A0A;
+}
+
+	/* APARTADO PARA LAS PIEZAS SELECCIONADAS POR EL USUARIO */
+
+.piezasSeleccionadas{
+	margin-bottom:20px;
+	display:flex;
+	justify-content:space-around;
+}
+#piezasSeleccionadas2{
+	height:200px;
+}
+.piezasSeleccionadas h1{
+	margin-top:20px;
+	padding:5px;
+	letter-spacing:2px;
+	text-shadow: 1px 1px 1px #919191,
+	1px 2px 1px #919191,1px 3px 1px #919191,
+	1px 4px 1px #919191,1px 5px 1px #919191,
+	1px 6px 1px #919191,1px 7px 1px #919191,
+	1px 20px 6px rgba(0,0,0,0.5),
+	1px 22px 8px rgba(0,0,0,0.4),
+	1px 24px 10px rgba(0,0,0,0.3);
+	color:#232C33;
+}
+.piezasSeleccionadas button{
+	width:100px;
+	height:33px;
+	margin-top:30px;
+	padding:6px;
+	outline:none;
+	background-color:#232C33;
+	color:#FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.60);
+	border: 2px solid #FFFFFF;
+	transition: all 0.4s ease;
+}
+.btnHover:hover button{
+	border-radius:20px;
+	background-color:#5A7D7C;
+	cursor:pointer;
+}
+#mezclaDePiezas{
+	height:500px;
+	border-top: 1px solid #FFFFFF;
+	margin-top:200px;
+}
+#mezclaDePiezas h2{
+	margin-top: 40px;
+	margin-bottom:20px;
+	letter-spacing:2px;
+	text-shadow: 1px 1px 1px #919191,
+	1px 2px 1px #919191,1px 3px 1px #919191,
+	1px 4px 1px #919191,1px 5px 1px #919191,
+	1px 6px 1px #919191,1px 7px 1px #919191,
+	1px 20px 6px rgba(0,0,0,0.5),
+	1px 22px 8px rgba(0,0,0,0.4),
+	1px 24px 10px rgba(0,0,0,0.3);
+	color:#232C33;
+	text-align: center;
+}
+
+	/* A PARTIR DE AQUÍ MEDIA QUERIES */
+
+	/* TABLET */
+
+@media only screen and (min-width:700px){
+	.inicioNuvola{
+		background-image:
+		url(../img/designIpad.png),
+		linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1));
+	}
+	.inicioArmario{
+		height:auto;
+	}
+	.inicioArmario img{
+		margin:20px;
+	}
+	.piezasSeleccionadas{
+		margin-top:50px;
+	}
+	.piezasSeleccionadas button{
+		margin-top:15px;
+		width:150px;
+		height:60px;
+		font-size:18px;
+	}
+	.piezasSeleccionadas h1, h2{
+		font-size:30px;
+	}
+}
+
+	/* DESKTOP */
+
+@media only screen and (min-width:1200px){
+	.inicioNuvola{
+		background-image:
+		url(../img/designdesktop.png);
+	}
+	body{
+		background: rgb(141,141,141);
+	}
+	.inicioArmario{
+		width:100%;
+		height:auto;
+		background-image:
+		url(../img/designdesktop2.jpg),
+		linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0));
+		margin: 0 auto;
+	}
+	.inicioArmario img{
+		margin:15px;
+	}
+	.piezasSeleccionadas button{
+		height:50px;
+		margin-top:25px;
+	}
+}
